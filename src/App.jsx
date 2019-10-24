@@ -1,10 +1,20 @@
 import React from 'react';
+import { Router, Route } from 'react-router-dom';
+import history from './history';
+import UserProvider from './context/UserProvider';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import MenuBar from '.components/menus/MenuBar';
 
 const App = () => {
     return (
-        <div>
-            Passport Starter!! Follow the Youtube series to get started
-        </div>
+        <Router history={history}>
+            <UserProvider>
+                <Route path="/" component={MenuBar} />
+                <Route path="/profile" component={Profile} />
+            </UserProvider>
+            <Route path="/" component={Home} />
+        </Router>
     );
 };
 
