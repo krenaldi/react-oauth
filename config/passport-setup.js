@@ -2,7 +2,7 @@ const passport = require('passport');
 const FacebookStrategy = require('passport-facebook').Strategy;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const GithubStrategy = require('passport-github').Strategy;
-const keys = require('.');
+const keys = require('./keys');
 const chalk = require('chalk');
 let user = {};
 

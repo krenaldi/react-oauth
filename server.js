@@ -3,7 +3,7 @@ const cors = require('cors');
 const passport = require('passport');
 const passportSetup = require('./config/passport-setup.js');
 const mongoose = require('mongoose');
-const keys = require('./config');
+const keys = require('./config/keys');
 
 const PORT = process.env.PORT || 8080;
 
