@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Term = ({ userData, selected }) => {
+const Terminal = ({ userData, selected }) => {
     const selectedData = selected === "All" ? userData : userData[selected];
     const jsonCode = JSON.stringify(selectedData, null, 4);
 

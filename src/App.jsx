@@ -4,7 +4,7 @@ import history from './history';
 import UserProvider from './context/UserProvider';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
-import MenuBar from '.components/menus/MenuBar';
+import MenuBar from './components/menus/MenuBar';
 
 const App = () => {
     return (
