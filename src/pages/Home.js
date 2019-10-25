@@ -7,9 +7,7 @@ const Home = () => {
         <div className="page" style={{ textAlign: "center"}}>
             <p className="page-title">Simple OAuth with Node</p>
             <p style={{ fontSize: 20 }}>
-                Login with <span style= {{ color: "var(--primary-blue)" }}>Facebook</span>,
-                <span style= {{ color: "var(--primary-red)" }}>Google</span>, 
-                <span style= {{ color: "var(--primary-black)" }}>Github</span>.
+                Login with Facebook, Google, or Github.
             </p>
             <Terminal 
                 userData={"passport.authenticate('facebook')"} 
