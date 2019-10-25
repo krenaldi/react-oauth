@@ -18,7 +18,7 @@ passport.deserializeUser((id, done) => {
 passport.use(new FacebookStrategy({
     clientID: keys.FACEBOOK.clientID,
     clientSecret: keys.FACEBOOK.clientSecret,
-    callbackUrl: "/auth/facebook/callback"
+    callbackURL: "/auth/facebook/callback"
 },
     (accessToken, refreshToken, profile, cb) => {
         console.log(chalk.blue(JSON.stringify(profile)));
@@ -30,7 +30,7 @@ passport.use(new FacebookStrategy({
 passport.use(new GoogleStrategy({
     clientID: keys.GOOGLE.clientID,
     clientSecret: keys.GOOGLE.clientSecret,
-    callbackUrl: "/auth/google/callback"
+    callbackURL: "/auth/google/callback"
 },
     (accessToken, refreshToken, profile, cb) => {
         console.log(chalk.blue(JSON.stringify(profile)));
@@ -42,7 +42,7 @@ passport.use(new GoogleStrategy({
 passport.use(new GithubStrategy({
     clientID: keys.GITHUB.clientID,
     clientSecret: keys.GITHUB.clientSecret,
-    callbackUrl: "/auth/github/callback"
+    callbackURL: "/auth/github/callback"
 },
     (accessToken, refreshToken, profile, cb) => {
         console.log(chalk.blue(JSON.stringify(profile)));

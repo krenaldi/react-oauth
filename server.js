@@ -14,21 +14,21 @@ app.use(passport.initialize());
 
 // Facebook auth routes
 app.get('/auth/facebook', passport.authenticate('facebook'));
-app.get('/auth/facebook/callback', passport.authenticate('facebook', (req, res) => {
+app.get('/auth/facebook/callback', passport.authenticate('facebook'), (req, res) => {
     res.redirect('/profile');
-}));
+});
 
 // Google auth routes
 app.get('/auth/google', passport.authenticate('google', {scope: ['profile', 'email']}));
-app.get('/auth/google/callback', passport.authenticate('google', (req, res) => {
+app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
     res.redirect('/profile');
-}));
+});
 
 // Github auth routes
 app.get('/auth/github', passport.authenticate('github'));
-app.get('/auth/github/callback', passport.authenticate('github', (req, res) => {
+app.get('/auth/github/callback', passport.authenticate('github'), (req, res) => {
     res.redirect('/profile');
-}));
+});
 
 app.get('/user', (req, res) => {
     console.log("getting user data");

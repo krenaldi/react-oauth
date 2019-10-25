@@ -5,7 +5,7 @@ import Column from '../components/wrappers/Column';
 import DataTags from '../components/menus/DataTags';
 import _ from 'lodash';
 
-const LoginMsg = "Uh of, there's nothing to show!" + "Login in to see how much of your personal data tech companies have at their disposal.";
+const LoginMsg = "Uh of, there's nothing to show! Login in to see how much of your personal data tech companies have at their disposal.";
 
 const Profile = () => {
     const [selected, setSelected] = useState("All");

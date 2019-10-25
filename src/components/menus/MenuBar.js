@@ -6,7 +6,7 @@ import _ from 'lodash';
 import PassportLogo from '../../res/passport-1.png';
 import HomeIcon from '@material-ui/icons/Home';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import LogoutIcon from '@material-ui/icons/Logout';
+import LogoutIcon from '@material-ui/icons/ExitToApp';
 
 const MenuBar = () => {
 
