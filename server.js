@@ -4,14 +4,23 @@ const passport = require('passport');
 const passportSetup = require('./config/passport-setup.js');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
+const cookieSession = require('cookie-session');
 
 let user = {};
 
 const PORT = process.env.PORT || 8080;
 
 const app = express();
+
+// create cookie session that expires in a day
+app.use(cookieSession({
+    maxAge: 24 * 60 * 60 * 1000,
+    keys: [keys.session.cookieKey]
+}));
+
 app.use(cors());
 app.use(passport.initialize());
+app.use(passport.session());
 
 
 // Facebook auth routes

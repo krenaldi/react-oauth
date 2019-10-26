@@ -33,7 +33,7 @@ passport.use(new GoogleStrategy({
     callbackURL: "/auth/google/callback"
 },
     (accessToken, refreshToken, profile, cb) => {
-        console.log(chalk.blue(JSON.stringify(profile)));
+        console.log(chalk.red(JSON.stringify(profile)));
         user = { ...profile };
         return cb(null, profile);
 }))
@@ -45,7 +45,7 @@ passport.use(new GithubStrategy({
     callbackURL: "/auth/github/callback"
 },
     (accessToken, refreshToken, profile, cb) => {
-        console.log(chalk.blue(JSON.stringify(profile)));
+        console.log(chalk.gray(JSON.stringify(profile)));
         user = { ...profile };
         return cb(null, profile);
 }))
