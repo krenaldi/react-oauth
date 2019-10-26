@@ -2,7 +2,7 @@
   "name": "passport-starter",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000/",
+  "proxy": "http://localhost:8080/",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
@@ -28,7 +28,7 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "HTTPS=true react-scripts start",
+    "start": "concurrently \"nodemon server\"  \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

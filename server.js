@@ -5,6 +5,8 @@ const passportSetup = require('./config/passport-setup.js');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
 
+let user = {};
+
 const PORT = process.env.PORT || 8080;
 
 const app = express();
