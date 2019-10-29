@@ -6,12 +6,12 @@ const keys = require('./keys');
 const chalk = require('chalk');
 let user = {};
 
-passport.serializeUser((user, done) => {
-    done(null, user.id);
+passport.serializeUser((user, cb) => {
+    cb(null, user);
 });
 
-passport.deserializeUser((user, done) => {
-    done(null, user);
+passport.deserializeUser((user, cb) => {
+    cb(null, user);
 });
 
 // Facebook Strategy

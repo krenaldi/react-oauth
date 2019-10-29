@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import UserDropDown from "./UserDropDown";
 import UserProvider from '../../context/UserProvider';
 import { data } from '../../data';
 import _ from 'lodash';
@@ -50,12 +51,14 @@ const MenuBar = () => {
                 </Link>
             }
 
+            <UserDropDown />
+
             {
-                !_.isEmpty(userData) && 
-                <a 
-                    className="btn menu-btn" 
-                    href={"/auth/logout"} 
-                    title="Logout" 
+                !_.isEmpty(userData) &&
+                <a
+                    className="btn menu-btn"
+                    href={"/auth/logout"}
+                    title="Logout"
                     style={{ float: "right" }}
                 >
                     <LogoutIcon />
