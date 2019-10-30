@@ -1,16 +1,15 @@
 import React, { createContext, useState, useEffect } from "react";
-const context = createContext(null);
+
+const context = createContext();
 
 const UserProvider = ({children}) => {
     const [user, setUser] = useState({});
+    console.log({children});
 
     useEffect(() => {
         fetch('/user')
             .then(res => res.json())
-            .then(res => {
-                console.log(res)
-                setUser(res)
-            })
+            .then(res => setUser(res))
             .catch(err => {
                 console.log(err);
             });

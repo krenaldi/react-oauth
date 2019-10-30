@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import UserDropDown from "./UserDropDown";
+// import UserDropDown from "./UserDropDown";
 import UserProvider from '../../context/UserProvider';
 import { data } from '../../data';
 import _ from 'lodash';
@@ -51,7 +51,7 @@ const MenuBar = () => {
                 </Link>
             }
 
-            <UserDropDown />
+            {/* <UserDropDown /> */}
 
             {
                 !_.isEmpty(userData) &&
