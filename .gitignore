@@ -24,3 +24,6 @@ yarn-error.log*
 commit.log
 my-keys.md
 config/keys.js
+
+.css.map
+.scss
