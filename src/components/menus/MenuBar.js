@@ -79,8 +79,6 @@ const MenuBar = () => {
                 </Link>
             }
 
-            {/* <UserDropDown /> */}
-
             {
                 !_.isEmpty(userData) &&
                 <a
