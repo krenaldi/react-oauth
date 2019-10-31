@@ -27,14 +27,14 @@ pre {
   text-decoration: none;
   color: #0F5C83;
 }
-.btn text {
+.btn-text {
   padding-left: 10px;
   vertical-align: middle;
 }
-.btn :hover {
+.btn:hover {
   opacity: 0.5;
 }
-.btn icon {
+.btn-icon {
   width: 15px;
   vertical-align: middle;
   display: inline-block;
@@ -44,7 +44,7 @@ pre {
   margin: 25px 25px;
   display: inline-block;
 }
-.menu-btn :hover {
+.menu-btn:hover {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
@@ -95,7 +95,7 @@ pre {
   width: 50%;
   margin: 0 auto;
 }
-.page title {
+.page-title {
   font-weight: 400;
   font-size: 35px;
 }
