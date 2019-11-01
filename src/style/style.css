@@ -23,6 +23,11 @@ pre {
   /* IE 5.5+ */
 }
 
+.page-title {
+  font-family: "Amatic SC", cursive;
+  color: #0F5C83;
+}
+
 .btn {
   text-decoration: none;
   color: #0F5C83;
@@ -31,7 +36,7 @@ pre {
   padding-left: 10px;
   vertical-align: middle;
 }
-.btn :hover {
+.btn:hover {
   opacity: 0.5;
 }
 .btn icon {
@@ -40,12 +45,17 @@ pre {
   display: inline-block;
 }
 
+.logofont {
+  color: #CDB99C;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+}
+
 .menu-btn {
   margin: 25px 25px;
   display: inline-block;
 }
-.menu-btn :hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-btn:hover {
   border-radius: 50%;
 }
 
