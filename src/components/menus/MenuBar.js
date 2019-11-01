@@ -36,13 +36,16 @@ const MenuBar = () => {
 {
                 _.isEmpty(userData) &&
 // ANDREAS INSERTED COMMON GROUNDS LOGO
-                <a className="logo-btn btn menu-btn MuiSvgIcon-root" href="/">
-                    <img
-                        src={CommonGroundsLogo}
-                        alt="common grounds logo"
-                        style={{ height: 30 }}
-                    />
-                </a>
+                <div style={{display: 'inline-block'}}>
+                    <a className="logo-btn btn menu-btn MuiSvgIcon-root" href="/">
+                        <img
+                            src={CommonGroundsLogo}
+                            alt="common grounds logo"
+                            style={{ height: 30 }}
+                        />
+                    </a>
+                    <span className="logofont">Common Grounds</span>
+                </div>
             }
 
 

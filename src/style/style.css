@@ -23,6 +23,11 @@ pre {
   /* IE 5.5+ */
 }
 
+.page-title {
+  font-family: "Amatic SC", cursive;
+  color: #0F5C83;
+}
+
 .btn {
   text-decoration: none;
   color: #0F5C83;
@@ -38,6 +43,12 @@ pre {
   width: 15px;
   vertical-align: middle;
   display: inline-block;
+}
+
+.logofont {
+  color: #CDB99C;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
 }
 
 .menu-btn {
